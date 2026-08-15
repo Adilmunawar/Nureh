@@ -63,7 +63,7 @@ export default function ProductCard({ product, onAddToCart, onQuickView }) {
       </div>
 
       <div className="product-details">
-        <span className="product-vendor">{product.vendor || 'NUREH'}</span>
+        <span className="product-vendor">{product.vendor || 'SHAFIA'}</span>
         <h4 className="product-title-text">{product.title}</h4>
         <div className="product-price-wrapper">
           {product.comparePrice && (

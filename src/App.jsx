@@ -97,7 +97,7 @@ export default function App() {
         {/* 8. Circular Seasons Collections */}
         <ShopBySeasons />
 
-        {/* 9. Brand visual collage grid (#NUREH) */}
+        {/* 9. Brand visual collage grid (#SHAFIA) */}
         <BrandCollage />
 
         {/* 10. Circular Call-To-Action Highlights */}

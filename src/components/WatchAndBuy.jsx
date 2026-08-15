@@ -150,7 +150,7 @@ export default function WatchAndBuy({ onAddToCart }) {
 
               {/* Right Column: Interactive Product Card Details */}
               <div className="modal-product-details">
-                <span className="modal-vendor">NUREH COLLECTION</span>
+                <span className="modal-vendor">SHAFIA COLLECTION</span>
                 <h3 className="modal-product-title">{activeReel.product.title}</h3>
                 <span className="modal-product-price">{activeReel.product.price}</span>
                 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone } from 'lucide-react';
+import { Phone } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -11,24 +11,22 @@ export default function Footer() {
           <div className="footer-col support-col">
             <div className="footer-logo-wrap">
               <img 
-                src="/assets/NUREH-N.gif" 
-                alt="Nureh N Logo" 
-                className="footer-logo-gif" 
+                src="/shafia.svg" 
+                alt="Shafia Logo" 
+                className="footer-logo-img" 
                 onError={(e) => {
-                  e.target.src = 'https://nureh.pk/cdn/shop/files/Nureh_Header_and_Footer_75752b53-dc6c-40bd-b326-d589e0d7df51.png?v=1698352944&width=120';
+                  e.target.style.display = 'none';
+                  const span = document.createElement('span');
+                  span.style.fontFamily = 'var(--font-heading)';
+                  span.style.fontSize = '24px';
+                  span.style.fontWeight = 'bold';
+                  span.innerText = 'SHAFIA';
+                  e.target.parentNode.appendChild(span);
                 }}
               />
             </div>
             <h4 className="footer-col-title">For Customer Support</h4>
             <ul className="support-info-list">
-              <li className="support-item">
-                <Mail size={16} className="support-icon" />
-                <a href="mailto:customer.care@nureh.pk">customer.care@nureh.pk</a>
-              </li>
-              <li className="support-item">
-                <Mail size={16} className="support-icon" />
-                <a href="mailto:info@nureh.pk">info@nureh.pk</a>
-              </li>
               <li className="support-item align-top">
                 <Phone size={16} className="support-icon" />
                 <span>
@@ -38,19 +36,17 @@ export default function Footer() {
               </li>
             </ul>
             <div className="footer-social-links">
-              <a href="https://facebook.com/nurehofficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <a href="https://www.facebook.com/share/14dNHWQKQ7y" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                 </svg>
               </a>
-              <a href="https://instagram.com/nurehofficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a href="https://vm.tiktok.com/ZS92UM6dL329e-uokQ8" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
                 </svg>
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <a href="https://youtube.com/@style365official?si=DMor1ZCf5h2Q6KyH" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
                   <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" />
@@ -89,16 +85,8 @@ export default function Footer() {
             <h4 className="footer-col-title">For Wholesale Inquiry</h4>
             <ul className="support-info-list">
               <li className="support-item">
-                <Mail size={16} className="support-icon" />
-                <a href="mailto:wholesale@nureh.pk">wholesale@nureh.pk</a>
-              </li>
-              <li className="support-item">
                 <span className="whatsapp-dot-icon"></span>
-                <a href="https://wa.me/923033404444" target="_blank" rel="noopener noreferrer">+92 303 3404444</a>
-              </li>
-              <li className="support-item">
-                <span className="whatsapp-dot-icon"></span>
-                <a href="https://wa.me/923001786000" target="_blank" rel="noopener noreferrer">+92 300 1786000</a>
+                <a href="https://wa.me/9203281140208" target="_blank" rel="noopener noreferrer">+92 0328 1140208</a>
               </li>
             </ul>
           </div>
@@ -126,7 +114,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="footer-bottom-grid">
           <div className="footer-copyright">
-            Copyright © 2026 <span className="brand-accent">Nureh.pk</span>
+            Copyright © 2026 <span className="brand-accent">shafia.co</span>
           </div>
           <div className="footer-payment-badges">
             <img src="/assets/master-f5a74105.svg" alt="MasterCard" className="payment-badge" />
@@ -152,9 +140,9 @@ export default function Footer() {
         .footer-logo-wrap {
           margin-bottom: 25px;
         }
-        .footer-logo-gif {
-          width: 50px;
-          height: 76px;
+        .footer-logo-img {
+          max-height: 50px;
+          width: auto;
           object-fit: contain;
           display: block;
         }

@@ -11,14 +11,14 @@ export default function BrandCollage() {
   return (
     <section className="brand-collage-section container">
       <div className="section-header">
-        <h2 className="section-title">#NUREH</h2>
-        <p className="section-subtitle">Share your style with us by tagging @nurehofficial on Instagram</p>
+        <h2 className="section-title">#SHAFIA</h2>
+        <p className="section-subtitle">Share your style with us by tagging @shafiaofficial on Instagram</p>
       </div>
 
       <div className="collage-grid">
         {images.map((img, idx) => (
           <div key={idx} className="collage-item zoom-effect">
-            <img src={img} alt={`Nureh Spotted ${idx + 1}`} className="collage-img" />
+            <img src={img} alt={`Shafia Spotted ${idx + 1}`} className="collage-img" />
             <div className="collage-hover-overlay">
               <svg 
                 viewBox="0 0 24 24" 
@@ -35,7 +35,7 @@ export default function BrandCollage() {
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
               </svg>
-              <span className="overlay-tag">@nurehofficial</span>
+              <span className="overlay-tag">@shafiaofficial</span>
             </div>
           </div>
         ))}

@@ -59,14 +59,14 @@ export default function Header({ cartCount, onCartOpen, wishlistCount = 0 }) {
           <div className="header-col-center">
             <a href="/" className="logo-link">
               <img 
-                src="/assets/Nureh_Header_and_Footer_75752b53-dc6c-40bd-b326-d589e0d7df51.png" 
-                alt="NURÉH Store" 
+                src="/shafia.svg" 
+                alt="SHAFIA Store" 
                 className="header-logo-img"
                 onError={(e) => {
                   e.target.style.display = 'none';
                   const span = document.createElement('span');
                   span.className = 'logo-text';
-                  span.innerText = 'NURÉH';
+                  span.innerText = 'SHAFIA';
                   e.target.parentNode.appendChild(span);
                 }}
               />
@@ -123,7 +123,7 @@ export default function Header({ cartCount, onCartOpen, wishlistCount = 0 }) {
           <div className="mobile-nav-overlay animate-fade" onClick={() => setMobileMenuOpen(false)}>
             <div className="mobile-nav-panel animate-slide" onClick={(e) => e.stopPropagation()}>
               <div className="mobile-nav-header">
-                <span className="logo-text-small">NURÉH</span>
+                <span className="logo-text-small">SHAFIA</span>
                 <button className="close-btn" onClick={() => setMobileMenuOpen(false)}>
                   <X size={24} />
                 </button>

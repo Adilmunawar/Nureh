@@ -2,7 +2,7 @@ export const trendsettersProducts = [
   {
     id: "ts-1",
     title: "MK-19",
-    vendor: "NUREH",
+    vendor: "SHAFIA",
     price: "Rs.14,000.00",
     priceNumber: 14000,
     image: "1_1f337c1f-5e3f-4a2c-a586-9ca6b7b9b76a.jpg",
@@ -14,7 +14,7 @@ export const trendsettersProducts = [
   {
     id: "ts-2",
     title: "MK-20",
-    vendor: "NUREH",
+    vendor: "SHAFIA",
     price: "Rs.14,000.00",
     priceNumber: 14000,
     image: "1_c0fe69c7-f323-4115-988b-77a116a30e8b.jpg",
@@ -26,7 +26,7 @@ export const trendsettersProducts = [
   {
     id: "ts-3",
     title: "MK-21",
-    vendor: "NUREH",
+    vendor: "SHAFIA",
     price: "Rs.14,000.00",
     priceNumber: 14000,
     image: "1_6a0cef60-4d40-44e1-8235-8ff7e4b540e3.jpg",
@@ -38,7 +38,7 @@ export const trendsettersProducts = [
   {
     id: "ts-4",
     title: "MK-23",
-    vendor: "NUREH",
+    vendor: "SHAFIA",
     price: "Rs.14,000.00",
     priceNumber: 14000,
     image: "1_5202a087-318f-4da4-9eac-a4ebd4da9d5b.jpg",
@@ -50,7 +50,7 @@ export const trendsettersProducts = [
   {
     id: "ts-5",
     title: "MK-24",
-    vendor: "NUREH",
+    vendor: "SHAFIA",
     price: "Rs.14,000.00",
     priceNumber: 14000,
     image: "1_b515a731-5ca1-4e98-a2bc-9ab92170e267.jpg",
@@ -76,7 +76,7 @@ export const newInProducts = [
   {
     id: "ni-1",
     title: "S- 28 A",
-    vendor: "NUREH",
+    vendor: "SHAFIA",
     price: "Rs.8,450.00",
     priceNumber: 8450,
     image: "1_5610badd-3a7c-4c9a-ab70-7a1247e8666f.jpg",
@@ -87,7 +87,7 @@ export const newInProducts = [
   {
     id: "ni-2",
     title: "S- 27 A",
-    vendor: "NUREH",
+    vendor: "SHAFIA",
     price: "Rs.8,450.00",
     priceNumber: 8450,
     image: "3_784f77d7-db8c-457c-bf2d-783689f83793.jpg",
@@ -98,7 +98,7 @@ export const newInProducts = [
   {
     id: "ni-3",
     title: "S- 26 A",
-    vendor: "NUREH",
+    vendor: "SHAFIA",
     price: "Rs.8,450.00",
     priceNumber: 8450,
     image: "1_0df701cd-2df6-486c-822a-bcf3a2b0eb1e.jpg",
@@ -109,7 +109,7 @@ export const newInProducts = [
   {
     id: "ni-4",
     title: "S- 25 A",
-    vendor: "NUREH",
+    vendor: "SHAFIA",
     price: "Rs.8,450.00",
     priceNumber: 8450,
     image: "1_a65bb51f-f6b2-4386-bcad-9fe3a38d6a86.jpg",
@@ -121,7 +121,7 @@ export const newInProducts = [
   {
     id: "ni-5",
     title: "S- 24 A",
-    vendor: "NUREH",
+    vendor: "SHAFIA",
     price: "Rs.8,450.00",
     priceNumber: 8450,
     image: "1_e9eb73b8-a570-4a95-a1ef-57103b31612b.jpg",
@@ -132,7 +132,7 @@ export const newInProducts = [
   {
     id: "ni-6",
     title: "S- 23 A",
-    vendor: "NUREH",
+    vendor: "SHAFIA",
     price: "Rs.8,450.00",
     priceNumber: 8450,
     image: "1_e87f4c11-5930-40c0-9406-79dc54888a59.jpg",
