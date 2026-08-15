@@ -1,0 +1,206 @@
+:root {
+  --font-heading: "Bodoni Moda", serif;
+  --font-body: "Jost", sans-serif;
+  --color-dark: #000000;
+  --color-secondary: #222222;
+  --color-accent: #ec0101; /* Flat discount red */
+  --color-success: #1f7025; /* Restocked green */
+  --color-text-muted: #696969;
+  --color-footer-bg: #fae1d5; /* Soft beige-peach footer */
+  --color-border: rgba(0, 0, 0, 0.08);
+  --wrapper-mw: 1420px;
+  
+  --transition-smooth: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-fast: all 0.15s ease-in-out;
+}
+
+/* Base resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-dark);
+  line-height: 1.6;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Marble Background overlay on content */
+#root {
+  background-image: url('/assets/Website_Marble_Updated.jpg') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Layout Containers */
+.container {
+  max-width: var(--wrapper-mw);
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: var(--transition-fast);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* Section Spacing Utility */
+.main-content > section {
+  margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .main-content > section {
+    margin-bottom: 40px;
+  }
+}
+
+/* Section Header styling */
+.section-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.section-title {
+  font-size: 28px;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-dark);
+  color: #ffffff;
+  padding: 10px 24px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border-radius: 40px;
+  border: 1px solid var(--color-dark);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--color-dark);
+}
+
+/* Badges */
+.badge-soldout {
+  background-color: var(--color-dark);
+  color: #ffffff;
+  font-size: 10px;
+  padding: 3px 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 2px;
+  letter-spacing: 0.8px;
+}
+
+.badge-restocked {
+  background-color: var(--color-success);
+  color: #ffffff;
+  font-size: 10px;
+  padding: 3px 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 2px;
+  letter-spacing: 0.8px;
+}
+
+/* Card Zoom Grid Effect */
+.zoom-effect {
+  overflow: hidden;
+  position: relative;
+}
+
+.zoom-effect img {
+  transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: 100%;
+  display: block;
+}
+
+.zoom-effect:hover img {
+  transform: scale(1.04);
+}
+
+/* Utility layout helpers */
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(1, 1fr); }
+  .grid-2 { grid-template-columns: repeat(1, 1fr); }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideInUp 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
